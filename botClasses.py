@@ -42,3 +42,20 @@ class dbquery:
     table: str
     queryColumn: str
     queryValue: str
+
+@dataclass
+class module:
+    name: str
+    description: str
+    gateway_url: str
+    module_type_id: int
+    metadata: dict
+
+@dataclass
+class module_command_metadata:
+    action: str
+    description: str
+    method: str
+    parameters: list
+    payload_keys: list 
+    req_priv_list: list
